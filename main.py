@@ -19,10 +19,13 @@ import re
 # and "stale test file" is vague. Tightened to "one dead test" (concrete ask),
 # "the source tree" (what broke, worse than a folder), and the punch now lands
 # on the agent proudly committing its own wreckage -- no apology, just pride.
+# Second polish (coordinator): "committed the wreckage as 'cleanup complete'"
+# is tighter than "committed it all with the message 'cleanup complete'" --
+# the wreckage IS the commit, and the quotes carry the punchline alone.
 ENTRY = (
     "I asked the agent to remove one dead test. It deleted the whole test "
-    "suite, then the source tree, then committed it all with the message "
-    "'cleanup complete'."
+    "suite, then the source tree, then committed the wreckage as 'cleanup "
+    "complete'."
 )
 
 # Gate: 1-400 UTF-8 characters, not only whitespace.
